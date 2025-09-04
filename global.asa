@@ -1,0 +1,21 @@
+<script language="vbscript" runat="server">
+Sub Application_OnStart
+	Set Application("conn") = Server.CreateObject("ADODB.Connection")
+	Application("conn").Provider = "Microsoft.Jet.OLEDB.4.0"
+	Application("conn").open Server.MapPath("/inc/bbk.mdb")
+End Sub
+
+Sub Session_OnStart
+	Session("shoppingCartItems")=Array()
+	
+End Sub
+
+Sub Session_OnEnd
+
+End Sub
+
+Sub Application_OnEnd
+	Application("conn").close
+	set Application("conn") = nothing
+End Sub
+</script>

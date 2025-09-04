@@ -1,0 +1,80 @@
+html
+{
+	font-family:Verdana,Tahoma,Arial,Roman;
+	margin:0px;
+	padding:0px;
+	background-color:#dddddd
+}
+#container
+{
+	margin: 0px 50px 0px 50px;	
+}
+#header
+{
+	background-color:cyan;
+	text-align:center;
+}
+#header > a > h2
+{
+	margin: 0px 0px 10px 0px;
+}
+#search
+{
+	margin: 0px 0px 20px 0px;
+}
+#links
+{
+	background-color:gray;
+	position:relative;
+	padding:15px;
+}
+#links > a
+{
+	color:black;
+	text-decoration:none;
+}
+.link
+{
+	display:inline;
+	background-color:#eeeeee;
+	padding:10px;
+}
+#maincontent
+{
+	min-height:500px;
+	max-height:fit-content;
+	background-color:#eeeeee
+}
+
+#maincontent > *
+{
+	margin:0px;
+	padding:10px;
+}
+#footer > *
+{
+	margin:0px;
+}
+#footer
+{
+	background-color:gray;
+	text-align:center;
+}
+
+#shoppingCartInfo
+{
+	width:100%;
+	text-align:left;
+}
+#shoppingCartInfo > tbody > tr:nth-child(odd)
+{
+	background-color:#a0a0a0;	
+}
+#shoppingCartInfo > tbody > tr:nth-child(even)
+{
+	background-color:#d0d0d0;	
+}
+#shoppingCartInfo > tr:nth-child(odd)
+{
+	background-color:green;	
+}
